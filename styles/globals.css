@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .ct-title{
+        @apply text-6xl font-bold dark:text-white pt-8 font-sans max-w-md text-center whitespace-normal
+    }
+    .ct-title-text{
+        @apply mt-3 text-xl text-neutral-600 dark:text-slate-300 font-sans whitespace-normal max-w-md break-words text-center
+    }
+    .ct-sub-1{
+        @apply mt-10 pl-2 md:pl-4 text-4xl dark:text-white 
+    }
+    .ct-sub-2{
+        @apply mt-4 pl-3 md:pl-6 text-3xl dark:text-white
+    }
+    .ct-sub-3{
+        @apply mt-2 pl-5 md:pl-8 text-2xl dark:text-white
+    }
+    .ct-text{
+        @apply mt-5 px-7 md:px-12 text-lg dark:text-slate-300
+    }
+}
