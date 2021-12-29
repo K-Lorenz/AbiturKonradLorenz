@@ -5,7 +5,7 @@ var Latex = require('react-latex');
 
 
 
-export default function Template(){
+export default function Mathe(){
     return(
             <div className='min-h-screen'>
                 <Head>
