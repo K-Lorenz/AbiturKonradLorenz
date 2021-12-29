@@ -14,7 +14,8 @@ const MyApp = ({ Component, pageProps }) => {
         {left: "\\[", right: "\\]", display: true},
         {left: "$", right: "$", display: false},
         {left: "\\(", right: "\\)", display: false}
-    ]
+    ],
+    fleqn: true
     });
   }, [Component]);
   return(

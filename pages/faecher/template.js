@@ -28,21 +28,16 @@ export default function Template(){
 
                 {/* Content */}
 
-                <div className='flex flex-col items-start'></div>
-                <div className='flex flex-col items-start'>
+                <div className=''>
 
-                    <h3 className="ct-sub-1"></h3>
-                    <h3 className="ct-sub-1">
+                    <h3>
                         SubHeader No.1
                     </h3>
-
-                    <h4 className="ct-sub-2"></h4>
-                    <h4 className="ct-sub-2">
+                    <h4 >
                         Subheader No.2
                     </h4>
 
-                    <h5 className="ct-sub-3"></h5>
-                    <h5 className="ct-sub-3">
+                    <h5>
                         Subheader No.3
                     </h5>
 
@@ -50,12 +45,13 @@ export default function Template(){
                     <p className="ct-text">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </p>
-                    <span className='ct-text'>
-                        {
-                            "\\[ \\begin{align*}\\begin{split} f(x)&=x^2+3x+4 \\\\ f(x)&=x2131\\end{split} \\end{align*}    \\]"
-                        }     
-                    </span>
-                    
+                    <span className='fm-s'>{"$f(x)=\\frac{1}{3}x^3 - x^2 - 3x + 4$"}</span>
+                    <p className='ct-text'>
+                        <div className='fm-ct'>
+                            <span className='fm-lg'>{"$$f(x)=\\frac{1}{3}x^3 - x^2 - 3x + 4$$"}</span>
+                        </div>
+                    </p>
+
                 </div>
             </div>
     )

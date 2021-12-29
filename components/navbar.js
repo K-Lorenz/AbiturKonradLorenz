@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function navbar(){
     return(
-            <nav className="bg-teal-600 fixed inset-x-0 top-0 h-16 opacity-100 z-50">
+            <nav className="bg-teal-700 fixed inset-x-0 top-0 h-16 opacity-100 z-50">
                 <div className=" mx-auto px-4">
                     <div className="flex justify-between">
 

@@ -5,7 +5,7 @@ export default function Layout({ children }) {
       <>
       <body className='dark'>
         <Navbar />
-        <main className="dark:bg-slate-700 py-16">{children}</main>
+        <main className="dark:bg-slate-900 py-16">{children}</main>
       </body>
         
       </>

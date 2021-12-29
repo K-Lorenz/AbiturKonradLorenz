@@ -22,54 +22,53 @@ export default function Ableitung(){
                 </h2>
             </div>
             <div className='flex flex-col items-start'>
-                <h3 className="ct-sub-1">
+                <h3>
                     Definition
                 </h3>
                 <p className="ct-text">
-                    <Latex>
-                        Die Ableitung einer Funktion $f$ an einer Stelle $x$ gibt die Steigung des Graphen der Funktion an einer Stelle an.
-                        Bezeichnet wird sie normalerweise mit $f'(x)$ und die 2. Ableitung mit $f''(x)$ usw.
-                    </Latex>
+                    Die Ableitung einer Funktion <span className='fm-s'>{"$f$"}</span> an einer Stelle <span className='fm-s'>{"$x$"}</span> gibt die <em>Steigung des Graphen der Funktion an einer Stelle an.</em>
+                    Bezeichnet wird sie normalerweise mit <span className='fm-s'>{"$f'(x)$"}</span> und die 2. Ableitung mit <span className='fm-s'>{"$f''(x)$"}</span> usw.
                 </p>
-                <span className='ct-text'>
-                    {
-                        "\\[ \\begin{align*}\\begin{split} f(x)&=x^2+3x+4 \\\\ f'(x)&=2x+3 \\\\ f''(x)&=2\\end{split} \\end{align*}    \\]"
-                    }     
-                </span>
-
-                <h3 className="ct-sub-1">
+                <p className='ct-text'>
+                    <div className='fm-ct'>
+                        <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} f(x)&=x^2+3x+4 \\\\ f'(x)&=2x+3 \\\\ f''(x)&=2\\end{split} \\end{align*}$$"}</span>
+                    </div>
+                </p>
+                <h3>
                     Ableitungsregeln
                 </h3>
-                <h4 className="ct-sub-2">Potenzregel</h4>
-                <span className='ct-text'>
-                    {
-                        "\\[ \\begin{align*}\\begin{split} f(x)&=x^r \\\\ f'(x)&=r\\cdot x^{r-1}\\end{split} \\end{align*}    \\]"
-                    }     
-                </span>
-                <h4 className="ct-sub-2">Summenregel</h4>
-                <span className='ct-text'>
-                    {
-                        "\\[ \\begin{align*}\\begin{split} (f(x)+g(x))' = f'(x)+g'(x)\\end{split} \\end{align*}    \\]"
-                    }     
-                </span>
-                <h4 className="ct-sub-2">Faktorregel</h4>
-                <span className='ct-text'>
-                    {
-                        "\\[ \\begin{align*}\\begin{split} (c\\cdot f(x))' = c \\cdot f'(x)\\end{split} \\end{align*}    \\]"
-                    }     
-                </span>
-                <h4 className="ct-sub-2">Produktregel</h4>
-                <span className='ct-text'>
-                    {
-                        "\\[ \\begin{align*}\\begin{split} f(x)&=u(x)\\cdot v(x)\\\\ f'(x)&=u'(x) \\cdot v + v' \\cdot u\\end{split} \\end{align*}    \\]"
-                    }     
-                </span>
-                <h4 className="ct-sub-2">Kettenregel</h4>
-                <span className='ct-text'>
-                    {
-                        "\\[ \\begin{align*}\\begin{split} f(x)&=u(v(x))\\\\ f'(x)&=u'(v(x)\\cdot v'\\end{split} \\end{align*}    \\]"
-                    }     
-                </span>
+                <h4>Potenzregel</h4>
+                <p className='ct-text'>
+                    <div className='fm-ct'>
+                        <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} f(x)&=x^r \\\\ f'(x)&=r\\cdot x^{r-1}\\end{split} \\end{align*}$$"}</span>
+                    </div>
+                </p>
+
+                <h4>Summenregel</h4>
+                <p className='ct-text'>
+                        <div className='fm-ct'>
+                            <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} \\Big(f(x)+g(x)\\Big)' = f'(x)+g'(x)\\end{split} \\end{align*}$$"}</span>
+                        </div>
+                    </p>
+                <h4>Faktorregel</h4>
+                <p className='ct-text'>
+                        <div className='fm-ct'>
+                            <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} \\Big(c\\cdot f(x)\\Big)' = c \\cdot f'(x)\\end{split} \\end{align*}$$"}</span>
+                        </div>
+                    </p>
+                <h4>Produktregel</h4>
+                <p className='ct-text'>
+                        <div className='fm-ct'>
+                            <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} f(x)&=u(x)\\cdot v(x)\\\\ f'(x)&=u'(x) \\cdot v + v' \\cdot u\\end{split} \\end{align*}$$"}</span>
+                        </div>
+                    </p>
+                <h4>Kettenregel</h4>
+
+                <p className='ct-text'>
+                        <div className='fm-ct'>
+                            <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} f(x)&=u(v(x))\\\\ f'(x)&=u'(v(x)\\cdot v'\\end{split} \\end{align*}$$"}</span>
+                        </div>
+                    </p>
             </div>
 
         </div>
