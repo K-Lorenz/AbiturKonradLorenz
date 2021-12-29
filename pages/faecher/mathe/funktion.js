@@ -34,10 +34,10 @@ export default function Template(){
 
                     <h3>Definition ganzrationale Funktion</h3>
                     <p className='ct-text'>
-                        Eine ganzrationale Funktion kann in der Form: <span className='fm-s dark:bg-red-900'>{"$f(x)=a_n \\cdot x^n + a_{n-1} \\cdot x^{n-1}+...+a_1 \\cdot x+ a_0$"}</span> <br></br> <span className='fm-s'><span>{"$n\\in \\mathbb{N}$ "}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{"$a\\in \\mathbb{R}$"}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{"$a \\neq 0$"}</span></span>
+                        Eine ganzrationale Funktion kann in der Form: <span className='fm-s dark:bg-red-900'>{"$f(x)=a_n \\cdot x^n + a_{n-1} \\cdot x^{n-1}+...+a_1 \\cdot x+ a_0$"}</span> <br></br> <span className='fm-s'><span className='pr-3'>{"$n\\in \\mathbb{N}$ "}</span><span className='pr-3'>{"$a\\in \\mathbb{R}$"}</span><span>{"$a \\neq 0$"}</span></span>
                        {' '}dargestellt werden.
                        <br></br>
-                       <em><span >{"$f$"}</span>{' '} ist eine ganzrationale Funktion &nbsp; <span>{"$n$"}</span>-ten Grades.</em> Die Menge der Zahlen, die eingesetzt werden dürfen: <span className='fm-s'>{"$\\mathbb{D} = \\mathbb{R}$"}</span> <br></br>
+                       <em><span >{"$f$"}</span>{' '} ist eine ganzrationale Funktion <span className='pl-2'>{"$n$"}</span>-ten Grades.</em> Die Menge der Zahlen, die eingesetzt werden dürfen: <span className='fm-s'>{"$\\mathbb{D} = \\mathbb{R}$"}</span> <br></br>
                        Die Menge aller Werte von y: <span className='fm-s'>{"$\\mathbb{W} = \\mathbb{R}$"}</span>
                     </p>
                     <h5>Beispiel</h5>
@@ -62,7 +62,7 @@ export default function Template(){
                             <h3><li>Y-Achsenabschnitt</li></h3>
                             <h4>Definition</h4>
                             <p className="ct-text">
-                                Der <b><span>{"$y$"}</span>-Achsenabschnitt</b> ist der <em>Schnittpunkt des Graphen mit der &nbsp;<span>{"$y$"}</span>-Achse</em> (<span className='fm-s'>{"$x=0$"}</span>).
+                                Der <b><span>{"$y$"}</span>-Achsenabschnitt</b> ist der <em>Schnittpunkt des Graphen mit der <span className='pl-2'>{"$y$"}</span>-Achse</em> (<span className='fm-s'>{"$x=0$"}</span>).
                             </p>
                             <h5>Beispiel zur Berechnung</h5>
                             <p className='ct-text'>
