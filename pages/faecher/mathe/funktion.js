@@ -75,7 +75,7 @@ export default function Funktion() {
                     Die Menge aller Werte von y: <span className='fm-s'>{"$\\mathbb{W} = \\mathbb{R}$"}</span>
                 </p>
                 <h5>Beispiel</h5>
-                <div className='flex curve'>
+                <div className='flex-wrap flex curve'>
                     <div id="curve-1" ></div>
 
                     <p className='ct-text'>
