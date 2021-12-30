@@ -8,8 +8,7 @@
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
-    "daisyui": "^1.20.0",
-    "function-plot": "^1.22.7",
+    "function-plot": "github:K-Lorenz/function-plot",
     "katex": "^0.15.1",
     "next": "latest",
     "prop-types": "^15.8.0",
