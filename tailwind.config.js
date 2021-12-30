@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         sans: ['Nunito', 'ui-sans-serif', 'system-ui']
       }
-    },
+    }
   },
   plugins: [
   ],

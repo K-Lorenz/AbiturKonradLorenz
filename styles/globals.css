@@ -34,8 +34,18 @@
         @apply -ml-7 md:-ml-12
     }
     .fm-ct{
-        @apply dark:text-white border-0 py-[0.11rem] px-1.5 rounded-md dark:bg-slate-700 inline-flex
+        @apply dark:text-white border-0 py-[0.11rem] pl-3 pr-1.5 rounded-md dark:bg-slate-700 inline-flex
     }
+    .anchor{
+        @apply pt-20 -mt-20 
+    }
+    .c-em{
+        @apply  border-0  px-1 rounded-md dark:bg-teal-800 dark:text-white inline-flex not-italic font-bold;
+    }
+    .curve{
+        @apply mt-5 px-7 md:px-12
+    }
+    
 }
 @layer base{
     h3{
@@ -51,6 +61,27 @@
         @apply font-bold dark:text-slate-200;
     }
     em{
-        @apply  border-0  px-1 rounded-md dark:bg-red-900 dark:text-white inline-flex not-italic;
+        @apply  c-em;
     }
+    hr{
+        @apply my-20  
+    }
+}
+
+.function-plot text{
+    font-size: 15px;
+    fill: white;
+}
+.function-plot path.origin {
+    stroke: white;
+}
+.function-plot path.line {
+    stroke: #115e59;
+    stroke-width: 3;
+  }
+.function-plot .tip circle{
+    fill: #0d9488;
+}
+.function-plot .canvas .content .annotations text{
+    padding-left: 5px;
 }
