@@ -17,19 +17,19 @@ export default function FirstPost(){
                 <h1 className="text-8xl font-bold p-4">Konrad Lorenz</h1>
                 <p className="text-xl p-10">you can read about me in my blog. <br/>
                 My blog is very interesting. <br/>
-                My Person isn't... <br/>
+                My Person isn&apos;t... <br/>
                 But there is a lot to talk about in this world. So let me start by saying: <br/> <br/>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
                 <p className="text-xl p-10">you can read about me in my blog. <br/>
                 My blog is very interesting. <br/>
-                My Person isn't... <br/>
+                My Person isn&apos;t... <br/>
                 But there is a lot to talk about in this world. So let me start by saying: <br/> <br/>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
                 <p className="text-xl p-10">you can read about me in my blog. <br/>
                 My blog is very interesting. <br/>
-                My Person isn't... <br/>
+                My Person isn&apos;t... <br/>
                 But there is a lot to talk about in this world. So let me start by saying: <br/> <br/>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>                

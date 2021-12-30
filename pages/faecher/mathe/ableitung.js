@@ -18,7 +18,7 @@ export default function Ableitung(){
                     Ableitung
                 </h1>
                 <h2 className='ct-title-text'>
-                    Ableitungen werden häufig in der Analysis gebraucht. Sind also essentiell für 'ne gute Note.
+                    Ableitungen werden häufig in der Analysis gebraucht. Sind also essentiell für &apos;ne gute Note.
                 </h2>
             </div>
             <div className='flex flex-col items-start'>

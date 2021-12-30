@@ -7,34 +7,35 @@ import React, { useEffect, useRef } from 'react'
 
 export default function Funktion() {
     useEffect(() => {
-
-
-        functionPlot({
-            xAxis:{domain:[-10, 10]},
-            target: '#curve-1',
-            
-            data: [{
-              fn: '1/3x^3-x^2-3x+4',
-              graphType: 'polyline',
-            }]
-          })
-
-          functionPlot({
-            xAxis:{domain:[-10, 10]},
-            target: '#curve-2',
-            
-            data: [{
-              fn: '1/3x^3-x^2-3x+4',
-              graphType: 'polyline',
-            }],
-            annotations:[
-                {
-                    x: 0,
-                    text: 'x=0'
-                }
-            ]
-          })
-
+        try{
+            functionPlot({
+                xAxis:{domain:[-10, 10]},
+                target: '#curve-1',
+                
+                data: [{
+                  fn: '1/3x^3-x^2-3x+4',
+                  graphType: 'polyline',
+                }]
+              })
+    
+              functionPlot({
+                xAxis:{domain:[-10, 10]},
+                target: '#curve-2',
+                
+                data: [{
+                  fn: '1/3x^3-x^2-3x+4',
+                  graphType: 'polyline',
+                }],
+                annotations:[
+                    {
+                        x: 0,
+                        text: 'x=0'
+                    }
+                ]
+              })
+    
+        } catch (e){}
+        
 
       }, []);
       
