@@ -76,7 +76,7 @@ export default function Ableitung(){
                     Bezeichnet wird sie normalerweise mit <span className='fm-s'>{"$f'(x)$"}</span> und die 2. Ableitung mit <span className='fm-s'>{"$f''(x)$"}</span> usw.
                 </p>
                 
-                <div className=' flex flex-row curve max-w-lg'>
+                <div className=' flex flex-wrap curve max-w-lg'>
                 <p className='ct-text'>
                     <div className='fm-ct'>
                         <span className='fm-lg'>{"$$\\begin{align*}\\begin{split} f(x)&=x^2+3x+4 \\\\ f'(x)&=2x+3 \\\\ f''(x)&=2\\end{split} \\end{align*}$$"}</span>
