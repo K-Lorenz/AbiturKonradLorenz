@@ -5,10 +5,19 @@ import functionPlot from 'function-plot'
 import React, { useEffect, useRef } from 'react'
 
 
+
 export default function Funktion() {
     useEffect(() => {
+        let contentsBounds = document.body.getBoundingClientRect();
+        let width = 800;
+        let height = 500;
+        let ratio = (contentsBounds.width/3) / width;
+        width *= ratio;
+        height *= ratio;
         functionPlot({
             xAxis:{domain:[-10, 10]},
+            width,
+            height,
             target: '#curve-1',
             
             data: [{
@@ -20,19 +29,86 @@ export default function Funktion() {
           functionPlot({
             xAxis:{domain:[-10, 10]},
             target: '#curve-2',
-            
+            width,
+            height,
             data: [{
               fn: '1/3x^3-x^2-3x+4',
               graphType: 'polyline',
+            },{
+                points:[
+                    [0, 4]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
             }],
-            annotations:[
-                {
-                    x: 0,
-                    text: 'x=0'
-                }
-            ]
           })
-
+          functionPlot({
+            xAxis:{domain:[-14, 14]},
+            target: '#curve-3',
+            width,
+            height,
+            data: [{
+              fn: '2x^2-8',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [2, 0],
+                    [-2, 0]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })
+          functionPlot({
+            xAxis:{domain:[-30, 40]},
+            target: '#curve-4',
+            width,
+            height,
+            data: [{
+              fn: '4x^2+16x',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [0, 0],
+                    [-4, 0]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })
+          functionPlot({
+            xAxis:{domain:[-10, 10]},
+            target: '#curve-5',
+            width,
+            height,
+            data: [{
+              fn: '4x^4+16x^2',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [0, 0]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })
+          functionPlot({
+            xAxis:{domain:[-8, 4]},
+            target: '#curve-6',
+            width,
+            height,
+            data: [{
+              fn: '4x^2+16x-8',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [-4.449, 0],
+                    [0.449, 0]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })
 
       }, []);
       
@@ -75,14 +151,13 @@ export default function Funktion() {
                     Die Menge aller Werte von y: <span className='fm-s'>{"$\\mathbb{W} = \\mathbb{R}$"}</span>
                 </p>
                 <h5>Beispiel</h5>
-                <div className='flex-wrap flex curve'>
-                    <div id="curve-1" ></div>
-
+                <div className=' flex flex-row curve max-w-lg'>
                     <p className='ct-text'>
                         <div className='fm-ct'>
                             <span className='fm-lg'>{"$$f(x)=\\frac{1}{3}x^3 - x^2 - 3x + 4$$"}</span> 
                         </div>
                     </p>
+                    <div id="curve-1" className=''></div>
                 </div>
                 <hr></hr>
                 
@@ -111,8 +186,8 @@ export default function Funktion() {
                         <p className="ct-text">
                             also ist der <span className='fm-s'>{"$y$"}</span>-Achsenabschnitt bei <span className='fm-s'>{"$A(0\\vert4)$"}</span>
                         </p>
-                        <div className='flex curve'>
-                            <div id="curve-2"></div>
+                        <div className='flex flex-wrap flex-auto curve'>
+                            <div id="curve-2" className='flex-auto'></div>
                         </div>
                         <h3><li><a id="nullstellen" className='anchor'>Nullstellen</a></li></h3>
                         <h4>Definition</h4>
@@ -131,11 +206,15 @@ export default function Funktion() {
                                 <p className='ct-text'>
                                     Setze <span className='fm-s'>{"$f(x)=0$"}</span>.
                                 </p>
-                                <p className='ct-text'>
-                                    <div className='fm-ct'>
-                                        <span className='fm-lg'>{"$$\\begin{alignat*} 00&=2x^2-8 &&\\vert +8 \\\\ 8&= 2x^2  &&\\vert \\div 2 \\\\ 4&=x^2 &&\\vert \\sqrt{\\: }\\\\ x&= \\begin{Bmatrix*} x_1=&2 \\\\ x_2=&-2 \\end{Bmatrix*}\\end{alignat*}$$"}</span>
-                                    </div>
-                                </p>
+                                <div className=' flex flex-row curve max-w-lg'>
+                                    <p className='ct-text'>
+                                        <div className='fm-ct'>
+                                            <span className='fm-lg'>{"$$\\begin{alignat*} 00&=2x^2-8 &&\\vert +8 \\\\ 8&= 2x^2  &&\\vert \\div 2 \\\\ 4&=x^2 &&\\vert \\sqrt{\\: }\\\\ x&= \\begin{Bmatrix*} x_1=&2 \\\\ x_2=&-2 \\end{Bmatrix*}\\end{alignat*}$$"}</span>
+                                        </div>
+                                    </p>
+                                    <div id="curve-3" className=''></div>
+                                </div>
+                                
                                 <p className='ct-text'>
                                     <em>Beachte</em>: Bei Funktionen 2. Grades sind <b>0, 1 oder 2 Lösungen möglich</b>. Bei 0 Lösungen ist der Wert vor der Wurzelziehung negativ (<span className='fm-s'>{"$x^2=-2$"}</span>). Bei genau einer Lösung ist der Wert vor der Wurzelziehung 0 (<span className='fm-s'>{"$x^2=0$"}</span>).
                                     Bei 2 Lösungen ist der Wert vor der Wurzelziehung positiv(<span className='fm-s'>{"$x^2=2$"}</span>).
@@ -155,11 +234,14 @@ export default function Funktion() {
                                 <p className='ct-text'>
                                     Setze <span className='fm-s'>{"$f(x)=0$"}</span>.
                                 </p>
-                                <p className='ct-text'>
-                                    <div className='fm-ct'>
-                                        <span className='fm-lg'>{"$$\\begin{alignat*} 00&=4x^2+16x &&\\vert T \\\\ 0&=4x\\cdot (x+4) \\\\ x&= \\begin{Bmatrix*} x_1=&0 \\\\ x_2=&-4  \\end{Bmatrix*}\\end{alignat*}$$"}</span>
-                                    </div>
-                                </p>
+                                <div className=' flex flex-row curve max-w-lg'>
+                                    <p className='ct-text'>
+                                        <div className='fm-ct'>
+                                            <span className='fm-lg'>{"$$\\begin{alignat*} 00&=4x^2+16x &&\\vert T \\\\ 0&=4x\\cdot (x+4) \\\\ x&= \\begin{Bmatrix*} x_1=&0 \\\\ x_2=&-4  \\end{Bmatrix*}\\end{alignat*}$$"}</span>
+                                        </div>
+                                    </p>
+                                    <div id="curve-4" className=''></div>
+                                </div>
                             </li>
                             <li className='ct-text'>
                                 Berechnung mithilfe von&nbsp;
@@ -203,6 +285,14 @@ export default function Funktion() {
                                         <span className='fm-lg'>{"$$x= \\begin{Bmatrix*} x_1=&0 \\end{Bmatrix*}$$"}</span>
                                     </div>
                                 </p>
+                                <div className=' flex flex-row curve max-w-lg'>
+                                    <p className='ct-text'>
+                                        <div className='fm-ct'>
+                                            <span className='fm-lg'>{"$$f(x)=4x^4+16x^2$$"}</span>
+                                        </div>
+                                    </p>
+                                    <div id="curve-5" className=''></div>
+                                </div>
                             </li>
                             <li className='ct-text'>
                                 Berechnung mithilfe der&nbsp;
@@ -232,6 +322,14 @@ export default function Funktion() {
                                         <span className='fm-lg'>{"$$\\begin{alignat*} 0x_{1/2}&=\\frac{-16 \\pm \\sqrt{16^2-4\\cdot 4 \\cdot (-8)}}{2 \\cdot 4} &&\\vert T \\\\ x_{1/2}&=\\frac{-16 \\pm \\sqrt{256-(-128)}}{8} &&\\vert T \\\\ x_{1/2}&=\\frac{-16 \\pm 8\\cdot \\sqrt{6}}{8} &&\\vert T \\\\ x_{1/2}&=-2 \\pm \\sqrt{6} &&\\vert T \\\\x&= \\begin{Bmatrix*} x_1=-2- \\sqrt{6} \\approx& -4,449 \\\\x_2=-2+ \\sqrt{6} \\approx& 0,449  \\end{Bmatrix*}\\end{alignat*}$$"}</span>
                                     </div>
                                 </p>
+                                <div className=' flex flex-row curve max-w-lg'>
+                                    <p className='ct-text'>
+                                        <div className='fm-ct'>
+                                            <span className='fm-lg'>{"$$f(x)=4x^2+16x-8$$"}</span>
+                                        </div>
+                                    </p>
+                                    <div id="curve-6" className=''></div>
+                                </div>
                             </li>
                         </ol>
                         <h3><li>Hochpunkt / Tiefpunkt / Sattelpunkt</li></h3>
