@@ -24,6 +24,10 @@ export default function Template(){
                         Header text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr
                     </h2>
                 </div>
+                <h5>Beispiel</h5>
+                <div className=' flex flex-row curve max-w-lg'>
+                    <div id="curve-1" className=''></div>
+                </div>
 
 
                 {/* Content */}
