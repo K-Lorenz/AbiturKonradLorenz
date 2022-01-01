@@ -3,6 +3,7 @@ import Head from 'next/head'
 import 'katex/dist/katex.min.css'
 import functionPlot from 'function-plot'
 import React, { useEffect, useRef } from 'react'
+import isMobile from 'is-mobile'
 
 
 
@@ -12,6 +13,9 @@ export default function Funktion() {
         let width = 800;
         let height = 500;
         let ratio = (contentsBounds.width/3) / width;
+        if(isMobile()){
+            ratio = (contentsBounds.width/1.3) / width;
+        }
         width *= ratio;
         height *= ratio;
         functionPlot({

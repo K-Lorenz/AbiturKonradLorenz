@@ -31,10 +31,10 @@
         @apply dark:text-white inline py-[0.11rem] px-1.5 border-0 rounded-md  dark:bg-slate-700
     }
     .fm-lg{
-        @apply -ml-7 md:-ml-12
+        @apply -ml-7 md:-ml-12 text-xs md:text-lg
     }
     .fm-ct{
-        @apply dark:text-white border-0 py-[0.11rem] pl-3 pr-1.5 rounded-md dark:bg-slate-700 inline-flex
+        @apply dark:text-white border-0 py-[0.11rem] pl-3 pr-1.5 rounded-md dark:bg-slate-700 inline-flex md:text-sm
     }
     .anchor{
         @apply pt-20 -mt-20 
@@ -44,6 +44,14 @@
     }
     .curve{
         @apply mt-5 px-7 md:px-12
+    }
+    .toc{
+        position: sticky;
+        position: -webkit-sticky; /* For Safari */
+        top: 24px; /* How far down the page you want your ToC to live */
+        /* Give table of contents a scrollbar */
+        max-height: calc(100vh - 40px);
+        overflow: auto;
     }
     
 }
