@@ -4,10 +4,12 @@ import 'katex/dist/katex.min.css'
 import functionPlot from 'function-plot'
 import React, { useEffect, useRef } from 'react'
 import isMobile from 'is-mobile'
-
-
+import { getCookies, getCookie, setCookies, removeCookies} from 'cookies-next';
+import { useRouter } from 'next/router'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Funktion() {
+    const router = useRouter()
     useEffect(() => {
         let contentsBounds = document.body.getBoundingClientRect();
         let width = 800;
@@ -113,9 +115,11 @@ export default function Funktion() {
                 graphType: 'scatter'
             }],
           })
-
+        setCookies('lastPage', '/faecher/mathe/funktion')
+        console.log(getCookie('lastPage'))
+        
       }, []);
-      
+
     
     
     return(
@@ -155,7 +159,7 @@ export default function Funktion() {
                     Die Menge aller Werte von y: <span className='fm-s'>{"$\\mathbb{W} = \\mathbb{R}$"}</span>
                 </p>
                 <h5>Beispiel</h5>
-                <div className=' flex flex-row flex-wrap curve max-w-lg'>
+                <div className=' flex flex-row flex-wrap curve'>
                     <p className='ct-text'>
                         <div className='fm-ct'>
                             <span className='fm-lg'>{"$$f(x)=\\frac{1}{3}x^3 - x^2 - 3x + 4$$"}</span> 
@@ -210,12 +214,12 @@ export default function Funktion() {
                                 <p className='ct-text'>
                                     Setze <span className='fm-s'>{"$f(x)=0$"}</span>.
                                 </p>
-                                <div className=' flex flex-row curve flex-wrap max-w-lg'>
-                                    <p className='ct-text'>
+                                <div className=' flex flex-row curve flex-wrap'>
+                                    <div className='ct-text'>
                                         <div className='fm-ct'>
                                             <span className='fm-lg'>{"$$\\begin{alignat*} 00&=2x^2-8 &&\\vert +8 \\\\ 8&= 2x^2  &&\\vert \\div 2 \\\\ 4&=x^2 &&\\vert \\sqrt{\\: }\\\\ x&= \\begin{Bmatrix*} x_1=&2 \\\\ x_2=&-2 \\end{Bmatrix*}\\end{alignat*}$$"}</span>
                                         </div>
-                                    </p>
+                                    </div>
                                     <div id="curve-3" className=''></div>
                                 </div>
                                 
@@ -238,7 +242,7 @@ export default function Funktion() {
                                 <p className='ct-text'>
                                     Setze <span className='fm-s'>{"$f(x)=0$"}</span>.
                                 </p>
-                                <div className=' flex flex-row curve flex-wrap max-w-lg'>
+                                <div className=' flex flex-row curve flex-wrap'>
                                     <p className='ct-text'>
                                         <div className='fm-ct'>
                                             <span className='fm-lg'>{"$$\\begin{alignat*} 00&=4x^2+16x &&\\vert T \\\\ 0&=4x\\cdot (x+4) \\\\ x&= \\begin{Bmatrix*} x_1=&0 \\\\ x_2=&-4  \\end{Bmatrix*}\\end{alignat*}$$"}</span>
@@ -269,11 +273,11 @@ export default function Funktion() {
                                 </p>
                                 <p className='ct-text'>
                                     Berechne <span className='fm-s'>{"$z$"}</span> mithilfe von&nbsp;
-                                    <Link href="#ausklammern">
+                                    <AnchorLink href="#ausklammern">
                                         <a className='link'>
                                             Ausklammern
                                         </a>
-                                    </Link>
+                                    </AnchorLink>
                                 </p>
                                 <p className='ct-text'>
                                     <div className='fm-ct'>
@@ -289,7 +293,7 @@ export default function Funktion() {
                                         <span className='fm-lg'>{"$$x= \\begin{Bmatrix*} x_1=&0 \\end{Bmatrix*}$$"}</span>
                                     </div>
                                 </p>
-                                <div className=' flex flex-row curve flex-wrap max-w-lg'>
+                                <div className=' flex flex-row curve flex-wrap'>
                                     <p className='ct-text'>
                                         <div className='fm-ct'>
                                             <span className='fm-lg'>{"$$f(x)=4x^4+16x^2$$"}</span>
@@ -326,7 +330,7 @@ export default function Funktion() {
                                         <span className='fm-lg'>{"$$\\begin{alignat*} 0x_{1/2}&=\\frac{-16 \\pm \\sqrt{16^2-4\\cdot 4 \\cdot (-8)}}{2 \\cdot 4} &&\\vert T \\\\ x_{1/2}&=\\frac{-16 \\pm \\sqrt{256-(-128)}}{8} &&\\vert T \\\\ x_{1/2}&=\\frac{-16 \\pm 8\\cdot \\sqrt{6}}{8} &&\\vert T \\\\ x_{1/2}&=-2 \\pm \\sqrt{6} &&\\vert T \\\\x&= \\begin{Bmatrix*} x_1=-2- \\sqrt{6} \\approx& -4,449 \\\\x_2=-2+ \\sqrt{6} \\approx& 0,449  \\end{Bmatrix*}\\end{alignat*}$$"}</span>
                                     </div>
                                 </p>
-                                <div className=' flex flex-row curve flex-wrap max-w-lg'>
+                                <div className=' flex flex-row curve flex-wrap'>
                                     <p className='ct-text'>
                                         <div className='fm-ct'>
                                             <span className='fm-lg'>{"$$f(x)=4x^2+16x-8$$"}</span>
@@ -340,7 +344,7 @@ export default function Funktion() {
                         <h4>Definition</h4>
                         <p className='ct-text'>
                             Bei einem <b>Hoch-, Tief-, oder Sattelpunkt</b> ist der Wert der <em>ersten Ableitung gleich null</em>(<span className='fm-s'>{"$f'(x)=0$"}</span>). <br></br>
-                            Es sind also die <a href="#nullstellen" className='link'>Nullstellen</a> der ersten <Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link>.
+                            Es sind also die <AnchorLink href="#nullstellen" className='link'>Nullstellen</AnchorLink> der ersten <Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link>.
                         </p>
                         
                     </ol>

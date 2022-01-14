@@ -5,8 +5,11 @@ import Image from 'next/image'
 var Latex = require('react-latex');
 import functionPlot from 'function-plot'
 import React, { useEffect, useRef } from 'react'
+import { getCookies, getCookie, setCookies, removeCookies} from 'cookies-next';
+import { useRouter } from 'next/router';
 
 export default function Ableitung(){
+    const router = useRouter()
     useEffect(() =>{
         let contentsBounds = document.body.getBoundingClientRect();
         let width = 800;
@@ -50,6 +53,7 @@ export default function Ableitung(){
         })
         a.addLink(b)
         b.addLink(a)
+        setCookies('lastPage', '/faecher/mathe/ableitung')
     })
 
     return (

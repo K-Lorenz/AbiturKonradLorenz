@@ -27,6 +27,7 @@ export default function Mathe(){
                 <ul className='list-disc list-inside'>
                     <h3 className='link'><li><Link href="/faecher/mathe/funktion"><a className='link'>Funktion</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link></li></h3>
+                    <h3 className='link'><li><Link href="/faecher/mathe/stochastik"><a className='link'>Stochastik</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/uebersicht"><a className='link'>Zurück</a></Link></li></h3>
 
                 </ul>
