@@ -6,6 +6,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Home() {
   var lastPage = getCookie('lastPage')
+  if (lastPage=== ''){
+    lastPage = '#a'
+  }
   return (
     <div className="flex flex-col items-center min-h-screen py-2">
       <Head>
@@ -44,7 +47,7 @@ export default function Home() {
               </p>
             </a>
           </Link>
-          <Link href="#a">
+          <Link href={lastPage}>
             <a
               className="p-6 mt-6 text-left border w-96 rounded-xl link"
             >
