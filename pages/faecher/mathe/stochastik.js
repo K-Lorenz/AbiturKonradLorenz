@@ -30,7 +30,7 @@ export default function Template(){
                     <p className='ct-text'>
                         Zufallsexperiment : Glücksrad: blau, rot, gelb
                     </p>
-                    <p className='ct-text'>A (Ereignis): "Bei einem Glücksrad wird 2 mal die gleiche Farbe gedreht" <br></br> p: einzelne Wahrscheinlichkeiten</p>
+                    <p className='ct-text'>A (Ereignis): &bdquo;Bei einem Glücksrad wird 2 mal die gleiche Farbe gedreht&ldquo; <br></br> p: einzelne Wahrscheinlichkeiten</p>
                     <h3>
                         Zufallsvariable
                     </h3>
