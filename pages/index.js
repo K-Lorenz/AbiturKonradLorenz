@@ -5,10 +5,6 @@ import { getCookies, getCookie, setCookies, removeCookies } from 'cookies-next';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Home() {
-  var lastPage = getCookie('lastPage')
-  if (lastPage== ''){
-    lastPage = '#a'
-  }
   return (
     <div className="flex flex-col items-center min-h-screen py-2">
       <Head>
