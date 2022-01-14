@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export default function Home() {
   var lastPage = getCookie('lastPage')
-  if (lastPage=== ''){
+  if (lastPage== ''){
     lastPage = '#a'
   }
   return (
