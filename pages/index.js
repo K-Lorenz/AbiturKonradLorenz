@@ -43,7 +43,7 @@ export default function Home() {
               </p>
             </a>
           </Link>
-          <Link href={lastPage}>
+          <Link href="#">
             <a
               className="p-6 mt-6 text-left border w-96 rounded-xl link"
             >
