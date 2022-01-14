@@ -20,7 +20,7 @@ export default function Home() {
 
         <p className="ct-title-text">
           This is the testing version.
-        </p>TypeError: Cannot destructure property 'auth' of 'urlObj' as it is undefined.
+        </p>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           <Link href="portfolio">
