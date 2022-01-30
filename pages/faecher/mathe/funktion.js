@@ -115,6 +115,40 @@ export default function Funktion() {
                 graphType: 'scatter'
             }],
           })
+          functionPlot({
+            xAxis:{domain:[-10, 10]},
+            target: '#curve-7',
+            width,
+            height,
+            data: [{
+              fn: 'x^3-3x',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [1, -2],
+                    [-1, 2]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })
+          functionPlot({
+            xAxis:{domain:[-10, 10]},
+            target: '#curve-8',
+            width,
+            height,
+            data: [{
+              fn: '3x^2-3',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [1, 0],
+                    [-1, 0]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })
         setCookies('lastPage', '/faecher/mathe/funktion')
         console.log(getCookie('lastPage'))
         
@@ -346,7 +380,39 @@ export default function Funktion() {
                             Bei einem <b>Hoch-, Tief-, oder Sattelpunkt</b> ist der Wert der <em>ersten Ableitung gleich null</em>(<span className='fm-s'>{"$f'(x)=0$"}</span>). <br></br>
                             Es sind also die <AnchorLink href="#nullstellen" className='link'>Nullstellen</AnchorLink> der ersten <Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link>.
                         </p>
-                        
+                        <div className=' flex flex-row curve flex-wrap'>
+                            <p className='ct-text'>
+                                <div className='fm-ct'>
+                                    <span className='fm-lg'>{"$$f(x)=x^3-3x$$"}</span>
+                                </div>
+                            </p>
+                            <div id="curve-7" className=''></div>
+                        </div>
+                        <div className=' flex flex-row curve flex-wrap'>
+                            <p className='ct-text'>
+                                <div className='fm-ct'>
+                                    <span className='fm-lg'>{"$$f'(x)=3x^2-3$$"}</span>
+                                </div>
+                            </p>
+                            <div id="curve-8" className=''></div>
+                        </div>
+                        <h5>Beispiel zur Berechnung</h5>
+                        <p className='ct-text'>
+                            Berechne die <AnchorLink href="#nullstellen"> <a className='link'>Nullstellen</a></AnchorLink> der ersten <Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link> mithilfe vom <Link href="#nullstellen"><a className='link'> Satz des Nullprodukts</a></Link>.
+                        </p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 0&=3x^2-3 &&\\vert -3\\\\ 3&=3x^2 &&\\vert \\div 3\\\\x^2&=1 &&\\vert \\sqrt{}{}\\\\x&= \\begin{Bmatrix*} x_1=&-1 \\\\x_2=&1 \\end{Bmatrix*}\\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'>
+                            Setze die Nullstellen in <span className='fm-s'>{"$f(x)$"}</span> ein um die Punkte zu berechnen.
+                        </p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0  f(x)=3 \\end{alignat*}$$"}</span>
+                            </div>
+                        </p>    
                     </ol>
             </div>
         </div>

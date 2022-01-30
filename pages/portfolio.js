@@ -5,45 +5,57 @@ import 'katex/dist/katex.min.css'
 
 export default function FirstPost(){
     return(
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <Head>
-                <title>Portfolio</title>
-            </Head>
-            <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-                <h1 className="text-4xl font-bold p-1">Hi!</h1>
-                <p className="text-2xl">
-                    my name is
-                </p>
-                <h1 className="text-8xl font-bold p-4">Konrad Lorenz</h1>
-                <p className="text-xl p-10">you can read about me in my blog. <br/>
-                My blog is very interesting. <br/>
-                My Person isn&apos;t... <br/>
-                But there is a lot to talk about in this world. So let me start by saying: <br/> <br/>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-                <p className="text-xl p-10">you can read about me in my blog. <br/>
-                My blog is very interesting. <br/>
-                My Person isn&apos;t... <br/>
-                But there is a lot to talk about in this world. So let me start by saying: <br/> <br/>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-                <p className="text-xl p-10">you can read about me in my blog. <br/>
-                My blog is very interesting. <br/>
-                My Person isn&apos;t... <br/>
-                But there is a lot to talk about in this world. So let me start by saying: <br/> <br/>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>                
-                <div className='text-3xl'>
-                    Here you can go {' '}
-                    <Link href="/">
-                        <a className="text-blue-600 hover:text-blue-500">
-                            Back
-                        </a>
-                    </Link>
+        <div className='min-h-screen'>
+                <Head>
+                    <title>
+                        Template
+                    </title>
+                </Head>
+
+                {/* Title */}
+
+                <div className='flex flex-col items-center'>
+                    <h1 className="ct-title">
+                        Big Header
+                    </h1>
+                    <h2 className='ct-title-text'>
+                        Header text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    </h2>
                 </div>
-                
-            </main>
-        </div>
+                <h5>Beispiel</h5>
+                <div className=' flex flex-row curve max-w-lg'>
+                    <div id="curve-1" className=''></div>
+                </div>
+
+
+                {/* Content */}
+
+                <div className=''>
+
+                    <h3>
+                        SubHeader No.1
+                    </h3>
+                    <h4 >
+                        Subheader No.2
+                    </h4>
+
+                    <h5>
+                        Subheader No.3
+                    </h5>
+
+                    <p className="ct-text"></p>
+                    <p className="ct-text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <span className='fm-s'>{"$f(x)=\\frac{1}{3}x^3 - x^2 - 3x + 4$"}</span>
+                    <p className='ct-text'>
+                        <div className='fm-ct'>
+                            <span className='fm-lg'>{"$$f(x)=\\frac{1}{3}x^3 - x^2 - 3x + 4$$"}</span>
+                        </div>
+                    </p>
+
+                </div>
+            </div>
     )
 
 }
