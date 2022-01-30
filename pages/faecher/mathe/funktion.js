@@ -406,13 +406,37 @@ export default function Funktion() {
                             </div>
                         </p>
                         <p className='ct-text'>
-                            Setze die Nullstellen in <span className='fm-s'>{"$f(x)$"}</span> ein um die Punkte zu berechnen.
+                            <em>Setze die Nullstellen in die 2. Ableitung ein</em> (<span className='fm-s'>{"$f''(x)=6x$"}</span>), um herauszufinden um was für eine Extremstelle es sich handelt.
                         </p>
                         <p className='ct-text'>
                             <div className='fm-ct'>
-                                <span className='fm-lg'>{"$$\\begin{alignat*} 0  f(x)=3 \\end{alignat*}$$"}</span>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 f''(-1)&=6 \\cdot (-1) \\\\ &=-6\\end{alignat*}$$"}</span>
                             </div>
-                        </p>    
+                        </p>
+                        <p className='ct-text'>und:</p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 f''(1)&=6 \\cdot (1) \\\\ &=6\\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'>Wenn der Wert der 2. Ableitung <span className='fm-s c-em'>{"$f''(x_1)<0$"}</span> ist, dann handelt es sich an dieser Stelle um ein <em>Maxima</em>. <br/> Wenn der Wert der 2. Ableitung <span className='fm-s c-em'>{"$f''(x_2)>0$"} </span> ist, dann handelt es sich an dieser Stelle um ein <em>Minima</em>. <br/>
+                            Falls <span className='fm-s c-em'>{"$f''(x)=0$"}</span> und <span className='fm-s c-em'>{"$f'''(x)\\ne0$"}</span>ist, handelt es sich um einen <em>Sattelpunkt</em>. <br/>
+                            Also ist <span className='fm-s '>{"$x_1$"}</span>  ein Maxima und  <span className='fm-s '>{"$x_2$"}</span> ein Minima.</p> 
+                        <p className='ct-text'>
+                            <em>Setze die Nullstellen in <span className='fm-s c-em'>{"$f(x)$"}</span> ein um die Punkte zu berechnen.</em>
+                        </p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 f(-1)&=(-1)^3 - 3\\cdot (-1) \\\\ &=-1 - (-3) \\\\ &=2\\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 f(1)&=(1)^3 - 3\\cdot (1) \\\\ &=1 - 3\\\\ &=-2\\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'><b>Hochpunkt:</b><span className='fm-s'>{"$H(-1 \\vert 2)$"}</span> <br/> <b>Tiefpunkt:</b><span className='fm-s'>{"$T(1 \\vert -2)$"}</span></p>
+                        <h3><li>Wendepunkte</li></h3>
                     </ol>
             </div>
         </div>
