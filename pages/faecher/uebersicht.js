@@ -63,7 +63,7 @@ export default function Template(){
               </p>
             </a>
           </Link>
-          <Link href="/faecher/uebersicht">
+          <Link href="/faecher/chemie/chemie">
             <a
               className="p-6 mt-6 text-left border w-96 rounded-xl link"
             >

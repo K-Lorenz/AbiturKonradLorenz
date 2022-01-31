@@ -7,7 +7,7 @@ var Latex = require('react-latex');
 
 export default function Template(){
     return(
-            <div className='min-h-screen'>
+            <div className='min-h-screen max-w-7xl  mx-auto'>
                 <Head>
                     <title>
                         Template

@@ -148,10 +148,23 @@ export default function Funktion() {
                 fnType: 'points',
                 graphType: 'scatter'
             }],
-          })
-        setCookies('lastPage', '/faecher/mathe/funktion')
-        console.log(getCookie('lastPage'))
-        
+          }),
+          functionPlot({
+            xAxis:{domain:[-10, 10]},
+            target: '#curve-9',
+            width,
+            height,
+            data: [{
+              fn: 'x^3-3x',
+              graphType: 'polyline',
+            },{
+                points:[
+                    [0, 0]
+                ],
+                fnType: 'points',
+                graphType: 'scatter'
+            }],
+          })   
       }, []);
 
     
@@ -167,7 +180,7 @@ export default function Funktion() {
             {/* Title */}
             <div className='flex flex-col items-center'>
                 <h1 className="ct-title">
-                    Funktion
+                    Kurvendiskussion
                 </h1>
                 <h2 className='ct-title-text'>
                     Funktionen ..blablabla.. ganzrational... zzzzZzZZzZzZZZZ blalbalblalballmvaoüih
@@ -217,7 +230,7 @@ export default function Funktion() {
                         <h3><li>Y-Achsenabschnitt</li></h3>
                         <h4>Definition</h4>
                         <p className="ct-text">
-                            Der <b><span>{"$y$"}</span>-Achsenabschnitt</b> ist der <em>Schnittpunkt des Graphen mit der <span className='pl-2'>{"$y$"}</span>-Achse</em> (<span className='fm-s'>{"$x=0$"}</span>).
+                            Der <b><span className='fm-s'>{"$y$"}</span>-Achsenabschnitt</b> ist der <em>Schnittpunkt des Graphen mit der <span className='pl-2'>{"$y$"}</span>-Achse</em> (<span className='fm-s'>{"$x=0$"}</span>).
                         </p>
                         <h5>Beispiel zur Berechnung</h5>
                         <p className='ct-text'>
@@ -423,7 +436,7 @@ export default function Funktion() {
                             Falls <span className='fm-s c-em'>{"$f''(x)=0$"}</span> und <span className='fm-s c-em'>{"$f'''(x)\\ne0$"}</span>ist, handelt es sich um einen <em>Sattelpunkt</em>. <br/>
                             Also ist <span className='fm-s '>{"$x_1$"}</span>  ein Maxima und  <span className='fm-s '>{"$x_2$"}</span> ein Minima.</p> 
                         <p className='ct-text'>
-                            <em>Setze die Nullstellen in <span className='fm-s c-em'>{"$f(x)$"}</span> ein um die Punkte zu berechnen.</em>
+                            <em>Setze die Nullstellen in <span className='fm-s c-em'>{"$f(x)$"}</span> ein, um die Punkte zu berechnen.</em>
                         </p>
                         <p className='ct-text'>
                             <div className='fm-ct'>
@@ -441,6 +454,40 @@ export default function Funktion() {
                         <p className='ct-text'>
                             Ein <b>Wendepunkt</b> ist ein Punkt des Graphen, an dem der Graph <b>seine Richtung ändert</b>. Um mögliche Wendestellen zu berechnen, <em>setzt man die 2. Ableitung gleich null</em>(<span className='fm-s'>{"$f''(x)=0$"}</span>). Um zu überprüfen ob die berechneten Stellen tatsächlich Wendestellen sind, setzt man sie in die <b>3. Ableitung</b>. Wenn sie ungleich null ist handelt es sich um eine Wendestelle(<span className='fm-s'>{"$f'''(x)\\ne 0$"}</span>).
                         </p>
+                        <div className=' flex flex-row curve flex-wrap'>
+                            <p className='ct-text'>
+                                <div className='fm-ct'>
+                                    <span className='fm-lg'>{"$$f(x)=x^3-3x$$"}</span>
+                                </div>
+                            </p>
+                            <div id="curve-9" className=''></div>
+                        </div>
+                        <h5>Beispiel zur Berechnung</h5>
+                        <p className='ct-text'><em>Bilde die 2. und 3. Ableitung der Funktion.</em></p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 f(x)&=x^3-3x \\\\ f''(x)&=6x\\\\ f'''(x)&=6 \\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'>Setze die <em>2. Ableitung gleich null</em> (<span className='fm-s'>{"$f''(x)=0$"}</span>)</p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 0&=6x \\\\ x&=0\\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'>Setze die <em>mögliche Wendestelle in die 3. Ableitung</em> ein, um zu überprüfen, ob es sich tatsächlich um eine Wendestelle handelt(<span className='fm-s'>{"$f'''(0)=6$"}</span>).
+                            Der Wert ist <b>größer als 0</b>, also eine Wendestelle von <b>Links nach Rechts</b>. <br/> Wenn der Wert <b>kleiner als Null</b> ist, dann ist es ein Wechsel von <b>Rechts nach Links</b>. <br/>
+                            Falls der Wert <b>gleich null</b> ist, muss man den <b>Vorzeichenwechsel der 2. Ableitung</b> betrachten. 
+                        </p>
+                        <p className='ct-text'>
+                            <em>Setze die Nullstelle in <span className='fm-s c-em'>{"$f(x)$"}</span> ein, um die Punkt zu berechnen.</em>
+                        </p>
+                        <p className='ct-text'>
+                            <div className='fm-ct'>
+                                <span className='fm-lg'>{"$$\\begin{alignat*} 0 f(0)&=(0)^3 - 3\\cdot (0) \\\\ &=0\\end{alignat*}$$"}</span>
+                            </div>
+                        </p>
+                        <p className='ct-text'><b>Wendepunkt:</b><span className='fm-s'>{"$W(0 \\vert 0)$"}</span></p>
                     </ol>
             </div>
         </div>
