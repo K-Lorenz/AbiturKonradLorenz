@@ -436,7 +436,11 @@ export default function Funktion() {
                             </div>
                         </p>
                         <p className='ct-text'><b>Hochpunkt:</b><span className='fm-s'>{"$H(-1 \\vert 2)$"}</span> <br/> <b>Tiefpunkt:</b><span className='fm-s'>{"$T(1 \\vert -2)$"}</span></p>
-                        <h3><li>Wendepunkte</li></h3>
+                        <h3><li>Wendepunkt</li></h3>
+                        <h4>Definition</h4>
+                        <p className='ct-text'>
+                            Ein <b>Wendepunkt</b> ist ein Punkt des Graphen, an dem der Graph <b>seine Richtung ändert</b>. Um mögliche Wendestellen zu berechnen, <em>setzt man die 2. Ableitung gleich null</em>(<span className='fm-s'>{"$f''(x)=0$"}</span>). Um zu überprüfen ob die berechneten Stellen tatsächlich Wendestellen sind, setzt man sie in die <b>3. Ableitung</b>. Wenn sie ungleich null ist handelt es sich um eine Wendestelle(<span className='fm-s'>{"$f'''(x)\\ne 0$"}</span>).
+                        </p>
                     </ol>
             </div>
         </div>
