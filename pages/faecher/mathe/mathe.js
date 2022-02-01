@@ -21,10 +21,11 @@ export default function Mathe(){
                         Mathe
                     </h1>
                     <h2 className='ct-title-text'>
-                    Zusammenfassungen von: Konrad Lorenz<br/> Mitschriebe von Herr Nadler (2022).
+                    Zusammenfassungen von: Konrad Lorenz<br/> Mitschriebe aus dem Unterricht bei Herr Nadler (2022).
                     </h2>
                 </div>
                 <ul className='list-disc list-inside'>
+                    <h3 className='link'><li><Link href="/faecher/mathe/funktion"><a className='link'>Funktionen</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/mathe/kurvendiskussion"><a className='link'>Kurvendiskussion</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/mathe/stochastik"><a className='link'>Stochastik</a></Link></li></h3>

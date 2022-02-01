@@ -173,7 +173,7 @@ export default function Funktion() {
         <div className='min-h-screen max-w-7xl  mx-auto'>
             <Head>
                 <title>
-                    Funktion
+                    Kurvendiskussion
                 </title>
             </Head>
 
