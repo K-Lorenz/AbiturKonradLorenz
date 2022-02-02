@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
-export default function funktion(){
+export default function Funktion(){
     useEffect(() => {
         let contentsBounds = document.body.getBoundingClientRect();
         let width = 800;
