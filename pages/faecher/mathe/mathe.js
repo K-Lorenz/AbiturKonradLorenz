@@ -29,7 +29,9 @@ export default function Mathe(){
                     <h3 className='link'><li><Link href="/faecher/mathe/kurvendiskussion"><a className='link'>Kurvendiskussion</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/mathe/ableitung"><a className='link'>Ableitung</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/mathe/stochastik"><a className='link'>Stochastik</a></Link></li></h3>
+                    <h3 className='link'><li><Link href="/faecher/mathe/integral"><a className='link'>Integral</a></Link></li></h3>
                     <h3 className='link'><li><Link href="/faecher/uebersicht"><a className='link'>Zurück</a></Link></li></h3>
+                    
 
                 </ul>
                 
