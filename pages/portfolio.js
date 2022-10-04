@@ -16,11 +16,11 @@ export default function FirstPost(){
 
                 <div className='flex flex-col items-center'>
                     <h1 className="ct-title">
-                        Hi, I'm Konrad Lorenz
+                        Hi, I&apos;m Konrad Lorenz
                     </h1>
                     <h2 className='ct-title-text'>
                         How did you end up here...? <br/>
-                        Well, if you're already here might aswell take a <b>look</b>
+                        Well, if you&apos;re already here might aswell take a <b>look</b>
                     </h2>
                 </div>
 
@@ -35,7 +35,7 @@ export default function FirstPost(){
                         1. Finished High School
                     </h4>
                     <p className="ct-text">
-                        I managed to successfully finish with school. 2022 I wrote my final exam("Abitur") and passed with a just about better than average grade of 2.1.
+                        I managed to successfully finish with school. 2022 I wrote my final exam(&quot;Abitur&quot;) and passed with a just about better than average grade of 2.1.
                         Why only 2.1? I seemed to always follow the things that I enjoy, rather than what school tried to teach me. Thats how this website came to life!
                         I was supposed to study, but instead i managed to find an excuse to do some programming and wrote this website...(to study of course!)
                     </p>
@@ -43,7 +43,7 @@ export default function FirstPost(){
                         2. Got into a Dual Student Programm at Accenture
                     </h4>
                     <p className="ct-text">
-                        I'm happy to anounce that i recently(Sept. 22) started my career at Accenture. Here I hope to learn skills and knowledge to help me turn my hobby
+                        I&apos;m happy to anounce that i recently(Sept. 22) started my career at Accenture. Here I hope to learn skills and knowledge to help me turn my hobby
                         into my job. So far I really enjoyed my time here and I hope that I will get my Bachelor and after that maybe even a Master. In any case this is a 
                         big step for me, but I look forward to fight my way through every little obstacle I might encounter.
                     </p>
