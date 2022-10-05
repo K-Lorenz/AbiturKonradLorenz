@@ -62,6 +62,27 @@ export default function FirstPost(){
                     <h5>
                         4. Tried teaching myself Machine Learning, failed miserably, ran out of time and made this Website
                     </h5>
+                    <h3>
+                        My Aspirations
+                    </h3>
+                    <h4>
+                        1. Learn and earn new skills and knowledge
+                    </h4>
+                    <p className='ct-text'>
+                        Study hard and get as much information as possible. And try to keep it all!
+                    </p>
+                    <h4>
+                        2. Progress my projects and start new ones
+                    </h4>
+                    <p className='ct-text'>
+                        Finish all of my running projects and look for new interesting topics to work on. Also start working on Work projects.
+                    </p>
+                    <h4>
+                        3. Work more efficiently 
+                    </h4>
+                    <p className='ct-text'>
+                        Cut distractions and learn to work as efficient as possible.
+                    </p>
                 </div>
             </div>
     )
